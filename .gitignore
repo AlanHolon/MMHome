@@ -1,6 +1,5 @@
 # Estensioni tipiche quando si lavora con TeXStudio
 *.aux
-*.pdf
 *.synctex.gz
 *.log
 *.out
