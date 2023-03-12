@@ -1,0 +1,76 @@
+\makeatletter
+\edef\input@path{{/home/alessandro/GIT/automazioni/}}
+\makeatother
+\documentclass[12pt]{mcquiz}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+%\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\levelskip*(0)={0.5em}
+\setlength\parskip{1.6em}
+\def\-#1{\qst <<<#1>>>}
+\def\sec#1{\par{\bf\large#1}\par}
+\def\tit#1{\par\begin{center}\bf\Large#1\end{center}\par}
+
+\begin{document}
+\tit{MateMajorana - Regolamento}
+\sec{Cos'è ``MateMajorana''?}
+\-{MateMajorana è una gara di matematica a squadre, rivolta agli studenti di terza media, alla quale ciascuna classe partecipa presentando una squadra composta da 7 studenti.}
+\-{Ogni squadra partecipante è contraddistinta da un nome, un nome breve di tre lettere, un emoji e un colore. Ad esempio Nome:``Le Chiocciole'', Nome breve:``CHI'', Emoji:(immagine di una chiocciola), Colore:``Azzurro''.}
+\-{Durante la gara, i componenti delle squadre sono invitati a rispondere a 16 quesiti a risposta numerica, suddivisi in quattro gruppi, ognuno contenente quattro quesiti.}
+\-{Man mano che vengono date le risposte ai quesiti, i componenti delle squadre possono aver riscontro, in tempo reale, della correttezza delle risposte date, consultando il tabellone. Si riporta l'esempio di cosa potrebbe apparire sul tabellone per la squadra ``Le Chiocciole'' (Il significato dei simboli adottati verrà chiarito successivamente).}
+\includegraphics[width=\textwidth]{Esempio.png}
+\sec{Come si svolge la gara}
+\-{La gara ha una durata di 2 ore.}
+\-{Ogni squadra ha a disposizione una postazione di lavoro costituita da un grande banco e una sedia per ogni elemento della squadra.}
+\-{Alla squadre vengono forniti i testi dei problemi da risovere, un blocchetto di bigletti su cui indicare le risposte ai problemi risolti e fogli per svolgere i calcoli.}
+\-{Le risposte ai quesiti devono essere numeri interi. Nel caso la soluzione di un quesito sia un numero decimale, è da considerarsi come risposta al quesito la parte intera del numero. Ad esempio, se la soluzione di un quesito è 6,28, la risposta da comunicare è 6; se la soluzione a un quesito è 18,84, la risposta da comunicare è 18.}
+\-{In ogni quesito viene indicato l'intervallo di numeri in cui può trovarsi la risposta. Ad esempio se alla fine di un quesito si trova indicato ``Intervallo della risposta: [ 10 ; 99 ]'', significa che la risposta deve essere un numero intero compreso tra 10 e 99, con 10 e 99 inclusi.}
+\-{Ogni squadra deve autonomamente munirsi di penne, matite, gomme, righe, squadre e compassi.}
+\-{\`E vietato l'uso di calcolatrici, smartphone, tablet, smartwhatch e in generale di ogni altro dispositivo. \`E vietato inoltre l'uso di tabelle e formulari o appunti in generale.}
+\-{Ogni squadra sceglie un ``consegnatore'' tra i suoi membri che ha il ruolo di consegnare alla commissione, mediante i biglietti forniti, le risposte ai problemi. La commissione quindi inserisce, in ordine cronologico di consegna, le risposte nella piattaforma informatica che provvede ad aggiornare la situazione delle squadre consultabile sul tabellone in tempo reale (Il tabellone si aggiorna ogni 20 secondi).}
+\-{Sul tabellone, oltre a comparire la situazione di tutte squadre (come mostrato nella precedente figura), viene anche mostrata la graduatoria dei primi tre classificati, che evolve in tempo reale, con i relativi punteggi calcolati secondo i criteri che saranno descritti successivamente.}
+\-{Le squadre possono risolvere i problemi nell'ordine che preferiscono ripartendo eventualmente il lavoro da svolgere a proprio piacere.}
+\-{A 20 minuti dalla fine della gara l'immagine sul tabellone inizia gradualmente a schiarirsi fino a scomparire completamente a 10 minuti dalla fine della gara. Negli ultimi 10 minuti di gara viene mostrato sul tabellone soltanto il tempo residuo fino alla fine della gara e non la situazione delle squadre o la graduatoria dei primi classificati. In questi ultimi 10 minuti le squadre possono continuare a rispondere ai quesiti senza però poter avere conferma di aver risposto correttamente.}
+\sec{Assegnazione del punteggio}
+\-{Per ogni quesito al quale una squadra risponde correttamente si assegna un punteggio base di 60 punti.}
+\-{Nel caso una squadra risponda in maniera errata a un quesito, essa può comunque provare a rispondere nuovamente allo stesso quesito per altre 4 volte. Tuttavia, in caso di risposta corretta, il punteggio assegnato è ridotto rispetto al punteggio base secondo la regola riportata in tabella:
+\begin{center}
+\begin{tabular}{cc}
+Risposta corretta dopo aver commesso... & \bf Punti\\ \hline
+ 1 errore & 30\\
+ 2 errori & 20\\
+ 3 errori & 15\\
+ 4 errori & 12\\
+\end{tabular}
+\end{center}}
+\-{Dopo aver commesso 5 errori nel tentativo di rispondere a un quesito, non sarà più possibile tentare di rispondere allo stesso quesito.}
+\-{La squadra che per prima risponde a un quesito senza commettere errori ottiene un punteggio ulteriore di 15 punti, totalizzando, per quel quesito, 75 punti.}
+\-{La squadra che per seconda risponde a un quesito senza commettere errori ottiene un punteggio ulteriore di 10 punti, totalizzando, per quel quesito, 70 punti.}
+\-{La squadra che per terza risponde a un quesito senza commettere errori ottiene un punteggio ulteriore di 5 punti, totalizzando, per quel quesito, 65 punti.}
+\-{Nel caso in cui una squadra risponda correttamente, anche avendo commesso errori, ai 4 quesiti di uno stesso gruppo di quesiti, ottiene ulteriori 30 punti bonus per ogni gruppo di quesiti completamente risolti.}
+\-{In caso di parità di punteggio, si colloca meglio in graduatoria la squadra che ha raggiunto cronologicamente prima il punteggio.}
+\-{Alla fine della gara di distingueranno i primi tre classificati dei quali saranno resi noti i punteggi complessivi. Tutti gli altri saranno considerati quarti classificati a pari merito.}
+\sec{Legenda}
+\-{Si riportano di seguito alcuni esempi escplicativi della legenda utilizzata nel tabellone.
+\setlength{\tabcolsep}{10pt}
+\begin{center}
+\begin{tabular}{ccccc}
+Risposta corretta & Risposta corretta & Risposta non data & Risposta non data & Attenzione\\
+& 3 errori commessi & &3 errori commessi & ultima chance\\
+\includegraphics[width=.08\textwidth]{Stella.png}&
+\includegraphics[width=.08\textwidth]{Stella3.png}&
+\includegraphics[width=.08\textwidth]{PuntoInt.png}&\includegraphics[width=.08\textwidth]{PuntoInt3.png}&\includegraphics[width=.08\textwidth]{Attenzione.png}
+\end{tabular}
+\end{center}
+\begin{center}
+\begin{tabular}{cccc}
+\includegraphics[width=.08\textwidth]{Primo.png}&
+\includegraphics[width=.08\textwidth]{Secondo.png}&
+\includegraphics[width=.08\textwidth]{Terzo.png}&\includegraphics[width=.08\textwidth]{Divieto.png}\\
+Primo a rispondere & Secondo a rispondere & Terzo a rispondere & Non puoi più rispondere \\
+al quesito & al quesito & al quesito & al quesito \\
+\end{tabular}
+\end{center}}
+
+\end{document}

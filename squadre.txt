@@ -1,0 +1,8 @@
+Feet Fingers;FEF;blue;&#x1F463
+Amaroni Caput Mundi;AMA;red;&#x1F977
+Lampadina;LAM;aqua;&#128161
+Ego;EGO;purple;&#128302
+Clessidra;CLE;orange;&#9203
+Dragoni;DRA;lime;&#128009
+NOA;NOA;violet;&#9996
+Matematrix;MTX;magenta;&#127942
